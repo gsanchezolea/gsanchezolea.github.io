@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,500&display=swap");
+body {
+  margin: 0;
+  font-family: "Archivo";
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 1em 1em;
+}
+
+.logo {
+  width: 210px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.menu {
+  width: 30px;
+  margin-top: 20%;
+}
+
+nav ul {
+  position: fixed;
+  width: 40%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: #EEE1C8;
+  height: 100%;
+  z-index: 10;
+  padding-top: 3em;
+}
+
+nav ul li a {
+  color: #004614;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: #eed7ac;
+}
+
+nav ul li a:hover {
+  background-color: #faeed9;
+}
+
+.exit-btn {
+  margin-bottom: 1em;
+  margin-top: -2.3em;
+  text-align: right;
+  padding: 0 0.6em;
+}
+
+.exit-btn img {
+  cursor: pointer;
+  width: 15px;
+}
+
+@media only screen and (min-width: 830px) {
+  .show-desktop {
+    display: block;
+    margin: 0 auto 13% auto;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    color: black;
+    background-color: inherit;
+    text-align: right;
+    padding: 1em 2em;
+  }
+  nav ul li a:hover {
+    background-color: inherit;
+  }
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  padding: 3em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+}
+
+section h1 {
+  margin: 1em 0 0 0;
+  font-size: 3em;
+  z-index: 2;
+}
+
+section:nth-child(2) {
+  background: black;
+  z-index: 5;
+  position: absolute;
+}
+
+section:nth-child(2) p {
+  color: white;
+  font-weight: 300;
+  width: 70%;
+  font-size: inherit;
+}
+
+.logo-bucks {
+  position: absolute;
+  right: 15%;
+  top: 23%;
+  width: 200px;
+  z-index: 2;
+}
+
+.stadium-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  z-index: 0;
+}
+
+.crowd-fg {
+  position: absolute;
+  z-index: 1;
+  bottom: 500;
+  left: 0;
+  width: 100%;
+}
+
+h2 {
+  color: #EEE1C8;
+  text-transform: uppercase;
+  font-size: 3.4em;
+}
+
+[data-scroll] {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+[data-scroll="in"] {
+  -webkit-transform: translateY(-10);
+          transform: translateY(-10);
+}
+
+[data-scroll="out"] {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.table th {
+  text-align: center;
+}
+
+.table {
+  border-radius: 5px;
+  width: 50%;
+  margin: 0px auto;
+  float: none;
+  padding: 50px;
+  margin: auto;
+}
+
+div.centered {
+  position: relative;
+  top: 135px;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+body {
+  padding: 0px;
+  margin-top: 0px;
+}
+
+div.row {
+  margin-top: 100px;
+  padding-top: 10px;
+  padding-left: 100px;
+}
+
+.headstyle {
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+}
+/*# sourceMappingURL=main.css.map */
